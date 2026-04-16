@@ -43,5 +43,5 @@ async def update_student(id : int, name : str, branch : str, age : int, db: Sess
 def delete_student(id: int, db: Session = Depends(get_db)):
     deleted = crud.make_delete(db, id)
     if deleted is None:
-        raise HTTPException(status_code=404, detail="Student not found")
+        raise HTTPException(status_code=404, detail="Student not found commit_SArth Rajak")
     return deleted
